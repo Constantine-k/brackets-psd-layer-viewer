@@ -1,0 +1,23 @@
+{
+  "name": "psd-layer-viewer",
+  "title": "PSD Layer Viewer",
+  "version": "1.0",
+  "description": "Allows to view PSD files, export layers, generate CSS code etc.",
+  "engines": {
+    "brackets": ">=1.0.0"
+  },
+  "homepage": "https://github.com/Constantine-k/brackets-psd-layer-viewer",
+  "author": "Konstantin Konstantinov",
+  "contributors": [
+    "Keyang Xiang (https://github.com/keyang)"
+  ],
+  "license": "MIT",
+  "categories": "external",
+  "keywords": [
+    "brackets-extension",
+    "PSD",
+    "layer",
+    "viewer",
+	"extract"
+  ]
+}

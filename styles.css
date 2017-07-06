@@ -1,0 +1,8 @@
+/* ==== Toolbar Icon ==== */
+
+#brackets-psd-layers-icon {
+    background-image: url(psd_layers_icon.svg);
+}
+#brackets-psd-layers-icon.active {
+    background-image: url(psd_layers_icon_active.svg);
+}
