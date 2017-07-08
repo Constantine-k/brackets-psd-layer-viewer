@@ -9,6 +9,10 @@ The extension have one little issue: "Export PNG" button doesn't work, so you sh
 
 PSD Layer Viewer is installed from the Brackets Extension Manager.
 
+### Keyboard shortcut
+
+`Ctrl-Shift-P` (Windows), `Cmd-Shift-P` (Mac)
+
 ### Acknowledgements
 
 Author of [Online PSD Viewer](http://psd.keyangxiang.com/): [Keyang Xiang](http://keyangxiang.com/)
