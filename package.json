@@ -1,7 +1,7 @@
 {
   "name": "psd-layer-viewer",
   "title": "PSD Layer Viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows to view PSD files, export layers, generate CSS code etc.",
   "engines": {
     "brackets": ">=1.0.0"

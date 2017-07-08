@@ -2,6 +2,7 @@ define(function(require, exports, module) {
 	
     var CommandManager = brackets.getModule("command/CommandManager"),
     Menus = brackets.getModule("command/Menus"),
+	KeyBindingManager = brackets.getModule("command/KeyBindingManager"),
     PanelManager = brackets.getModule("view/PanelManager"),
     ExtensionUtils = brackets.getModule("utils/ExtensionUtils"),        
     AppInit = brackets.getModule("utils/AppInit");
@@ -10,6 +11,10 @@ define(function(require, exports, module) {
     var panel;
     var panelHtml = require("text!panel.html");
 	var $layersIcon = $('<a href="#" title="PSD Layer Viewer" id="brackets-psd-layers-icon"></a>');
+	
+	// Keyboard shortcut
+	CommandManager.register("Open PSD Layer Viewer", LAYERS_EXECUTE, handleLayers);
+	KeyBindingManager.addBinding(LAYERS_EXECUTE, "Ctrl-Shift-P");
 
     function handleLayers() {
         if(panel.isVisible()) {
@@ -21,7 +26,7 @@ define(function(require, exports, module) {
 			$layersIcon.addClass('active');
             CommandManager.get(LAYERS_EXECUTE).setChecked(true);
         }
-    }	
+    }
 
     AppInit.appReady(function () {
         $layersIcon.click(function () {
